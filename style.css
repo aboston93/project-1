@@ -1,0 +1,22 @@
+body{
+height: 100vh;
+
+}
+.section{
+    height:76vh;
+  display: flex;
+  width:100%;
+    
+ 
+}
+.box{
+   background-color: blue;
+   border: solid black; 
+   height: 25%;
+   width: 100%;
+  
+}
+.container{
+    width: 33%;
+    height: 100%;
+}
