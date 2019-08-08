@@ -1,10 +1,12 @@
-function questionSelection() {
-    $( "box" ).click(function() {
-       $('modalBox').show()
+
+    $( ".box" ).click(function() {
+       $('#question-modal').css({
+        "display": "block",
+    });
      
-     let question =  $('box').html()
+     let question =  $('.box2').html()
      console.log(question)
-    })}
+    })
       
       
       
