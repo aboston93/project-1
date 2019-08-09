@@ -1,8 +1,9 @@
 body{
 height: 100vh;
 z-index: 0;
-background-image: url("football-no-lines\ \(1\).png")
-
+background-color: #00f531;
+background-image: url("https://www.transparenttextures.com/patterns/football-no-lines.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 .section{
     height:76vh;
@@ -12,8 +13,10 @@ background-image: url("football-no-lines\ \(1\).png")
  
 }
 .box{
-   background-color: blue;
-   border: solid black; 
+  
+   border: solid whitesmoke 1px;
+font-size:  22px;
+color: white;
    height: 25%;
    width: 100%;
   z-index: 50;
@@ -55,4 +58,9 @@ img{
 	padding: 20px;
 	border-radius: 10px;
 	background: #fff;
+}
+
+#player{
+height: 50px;
+width: 50px;
 }
