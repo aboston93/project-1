@@ -1,6 +1,8 @@
 body{
 height: 100vh;
 z-index: 0;
+background-image: url("football-no-lines\ \(1\).png")
+
 }
 .section{
     height:76vh;
@@ -25,7 +27,7 @@ img{
     border: red;
 }
 
-#question-modal{
+.modal-wrapper{
     display: none;
     position: fixed;
     display: none;
