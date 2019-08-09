@@ -6,25 +6,49 @@
 // global variables that will be used as the questions 
 let questions = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o']
 let answers = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o']
-let yard20
-let yard40
-let yard60
-let yard80
-let TD
-// let p = Math.floor((Math.random() * 15) + 1);
-// let i = Number(p)
+let yard20 = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o']
+let yard40 = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o']
+let yard60 = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o']
+let yard80 = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o']
+let TD = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o']
+let p = Math.floor((Math.random() * 15) + 1);
+let i = Number(p)
 // Modal question  function appears 
-function MakeModalAppear(modalQuestions) {
+function MakeModalAppear() {
     $(".box").click(function () {
+        x = $(this).html()
+        console.log(x)
+if(x=20){
+ $('#question-title').html(yard20[i]) 
+ console.log("blah")
+}
+
+if(x=40){
+    $('#question-title').html(yard40[i]) 
+    console.log("your 40")
+   }
+   if(x=60){
+    $('#question-title').html(yard60[i]) 
+    console.log("your 60")
+   }
+   if(x=80){
+    $('#question-title').html(yard80[i]) 
+    console.log("your 80")
+   }
+   if(x="TD"){
+    $('#question-title').html(TD[i]) 
+    console.log("your TD")
+   }
+
         $('#question-modal').css({
             "display": "block",
         })
         console.log('im inside make modal appear')
+        console.log()
+        $('.box').html()
+        console.log()
 
-        $('.box').html(modalQuestions)
-        console.log(modalQuestions)
-
-        $('#question-title').html(modalQuestions)
+        $('#question-title').html()
         MakeAModalAppear()
     })
 
@@ -39,7 +63,7 @@ function MakeAModalAppear(modalAnswers) {
         $('#question-modal').css({
             "display": "none",
         })
-
+    
 
         $('.box').html(modalAnswers)
         $('#answer-title').html(modalAnswers)
@@ -47,11 +71,30 @@ function MakeAModalAppear(modalAnswers) {
         console.log(modalAnswers)
     })
 }
-for (let i = 0; i < 15; i++) {
-    MakeModalAppear(questions[i])
+
+MakeModalAppear()
     //
-    // MakeAModalAppear(answers[i])
-}
+    MakeAModalAppear()
+
+
+
+// for (let i = 0; i < 15; i++) {
+//     MakeModalAppear()
+//     //
+//     MakeAModalAppear()
+// }
+
+// if(Number($(this)=20)){
+
+// }
+
+
+
+
+
+
+
+
 
 // make the divs be populated with the answers
 
