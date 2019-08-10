@@ -10,7 +10,7 @@ let yard20 = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', '
 let yard40 = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o']
 let yard60 = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o']
 let yard80 = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o']
-let TD = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o']
+let yard100 = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o']
 let p = Math.floor((Math.random() * 15) + 1);
 let i = Number(p)
 // Modal question  function appears 
@@ -35,8 +35,8 @@ if(x==40){
     $('#question-title').html(yard80[i]) 
     console.log("your 80")
    }
-   if(x=="TD"){
-    $('#question-title').html(TD[i]) 
+   if(x==="100"){
+    $('#question-title').html(yard100[i]) 
     console.log("your TD")
    }
 
