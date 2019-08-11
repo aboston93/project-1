@@ -25,6 +25,7 @@ let i = Number(p)
 function MakeModalAppear() {
     $(".box").click(function () {
         x = $(this).html()
+        $(this).append('<img src="Untitled.png">')
         console.log(x)
         if (x == 20) {
             $('#question-title').html(yard20[i])
@@ -106,10 +107,14 @@ function submitAnswer() {
          s = Number(0)+Number(x)
          console.log(f,x,s)
          $('#answer-title').html(s)
+         
 
         }
         else{
-            window.Blob("wrong!")
+            $('<img src="Untitled.png">').detach()
+            $('#answer-modal').css({
+                "display": "none",
+            })
         }
 
 
