@@ -11,11 +11,17 @@ let yard40 = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', '
 let yard60 = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o']
 let yard80 = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o']
 let yard100 = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o']
+let answer20 = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o']
+let answer40 = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o']
+let answer60 = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o']
+let answer80 = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o']
+let answer100 = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o']
 let p = Math.floor((Math.random() * 15) + 1);
 let i = Number(p)
 
 
-// Modal question  function appears 
+// Modal question  function appears  
+//comparing html of the div upon its intial click and the  depending on the value posting a question.
 function MakeModalAppear() {
     $(".box").click(function () {
         x = $(this).html()
@@ -87,22 +93,8 @@ function submitAnswer() {
             console.log('your right we almost done with the project')
         }
 
-        if (x == 40) {
-            $('#question-title').html(yard40[i])
-            console.log("your right 40")
-        }
-        if (x == 60) {
-            $('#question-title').html(yard60[i])
-            console.log("your  right 60")
-        }
-        if (x == 80) {
-            $('#question-title').html(yard80[i])
-            console.log("your rihgt  80")
-        }
-        if (x === "100") {
-            $('#question-title').html(yard100[i])
-            console.log("your  TD")
-        }
+
+
 
 
     })
