@@ -19,7 +19,8 @@ font-size:  22px;
 color: white;
    height: 25%;
    width: 100%;
-  z-index: 50;
+  z-index: -5;
+  position: absolute;
 }
 .container{
     width: 33%;
@@ -63,4 +64,9 @@ img{
 #player{
 height: 50px;
 width: 50px;
+}
+
+img{
+    position: relative;
+    z-index: 200;
 }

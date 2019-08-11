@@ -23,6 +23,7 @@ let i = Number(p)
 // Modal question  function appears  
 //comparing html of the div upon its intial click and the  depending on the value posting a question.
 function MakeModalAppear() {
+    $(document).ready(function(){
     $(".box").click(function () {
         x = $(this).html()
         $(this).append('<img src="Untitled.png">')
@@ -69,8 +70,8 @@ function MakeModalAppear() {
         $('#question-title').html()
         MakeAModalAppear()
     })
-
-}
+    }
+    )}
 
 
 function MakeAModalAppear(modalAnswers) {
@@ -107,22 +108,21 @@ function submitAnswer() {
          s = Number(0)+Number(x)
          console.log(f,x,s)
          $('#answer-title').html(s)
-         
-
+         $('#answer-modal').css({
+            "display": "none",})
         }
-        else{
-            $('<img src="Untitled.png">').detach()
-            $('#answer-modal').css({
-                "display": "none",
-            })
-        }
+       
 
-
-
-
-
-    })
+else{
+    $('#answer-modal').css({
+        "display": "none",
 }
+
+
+
+
+  
+    )}})}
 
 MakeModalAppear()
 //
