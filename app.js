@@ -28,14 +28,14 @@ function MakeModalAppear() {
         console.log(x)
         if (x == 20) {
             $('#question-title').html(yard20[i])
-            answer20[i]=n
+           n= answer20[i]
             console.log("blah")
         }
 
         if (x == 40) {
             $('#question-title').html(yard40[i])
             console.log("your 40")
-            answer40[i]=n
+           n= answer40[i]
 
         }
         if (x == 60) {
@@ -95,15 +95,21 @@ function submitAnswer() {
     $("#confirm-button").click(function () {
         l = $('#user').val()
         j = $('#question-title').html()
-        
+        f = $('#answer-title').html()
         console.log(l, j)
 
 
         if ( l== n) {
             $('#question-title').html(yard20[i])
             console.log('your right we almost done with the project')
-            window.alert("Great Throw!");
+          
+         s = Number(0)+Number(x)
+         console.log(f,x,s)
+         $('#answer-title').html(s)
 
+        }
+        else{
+            window.Blob("wrong!")
         }
 
 
