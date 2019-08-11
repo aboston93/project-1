@@ -13,34 +13,34 @@ let yard80 = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', '
 let yard100 = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o']
 let p = Math.floor((Math.random() * 15) + 1);
 let i = Number(p)
-l = $('#user').val()
+
 
 // Modal question  function appears 
 function MakeModalAppear() {
     $(".box").click(function () {
         x = $(this).html()
         console.log(x)
-if(x==20){
- $('#question-title').html(yard20[i]) 
- console.log("blah")
-}
+        if (x == 20) {
+            $('#question-title').html(yard20[i])
+            console.log("blah")
+        }
 
-if(x==40){
-    $('#question-title').html(yard40[i]) 
-    console.log("your 40")
-   }
-   if(x==60){
-    $('#question-title').html(yard60[i]) 
-    console.log("your 60")
-   }
-   if(x==80){
-    $('#question-title').html(yard80[i]) 
-    console.log("your 80")
-   }
-   if(x==="100"){
-    $('#question-title').html(yard100[i]) 
-    console.log("your TD")
-   }
+        if (x == 40) {
+            $('#question-title').html(yard40[i])
+            console.log("your 40")
+        }
+        if (x == 60) {
+            $('#question-title').html(yard60[i])
+            console.log("your 60")
+        }
+        if (x == 80) {
+            $('#question-title').html(yard80[i])
+            console.log("your 80")
+        }
+        if (x === "100") {
+            $('#question-title').html(yard100[i])
+            console.log("your TD")
+        }
 
         $('#question-modal').css({
             "display": "block",
@@ -52,7 +52,7 @@ if(x==40){
 
         $('#question-title').html()
         MakeAModalAppear()
-     } )
+    })
 
 }
 
@@ -65,47 +65,53 @@ function MakeAModalAppear(modalAnswers) {
         $('#question-modal').css({
             "display": "none",
         })
-        
+
 
         $('.box').html(modalAnswers)
         $('#answer-title').html(modalAnswers)
-submitAnswer()
+        submitAnswer()
         console.log(modalAnswers)
     })
 }
 
-function submitAnswer(){
+function submitAnswer() {
     $("#confirm-button").click(function () {
-       l = $('#user')
-        if(l==x){
-            $('#question-title').html(yard20[i]) 
-            console.log('your right we almost done with the project')
-           }
-           
-           if(x==40){
-               $('#question-title').html(yard40[i]) 
-               console.log("your right 40")
-              }
-              if(x==60){
-               $('#question-title').html(yard60[i]) 
-               console.log("your  right 60")
-              }
-              if(x==80){
-               $('#question-title').html(yard80[i]) 
-               console.log("your rihgt  80")
-              }
-              if(x==="100"){
-               $('#question-title').html(yard100[i]) 
-               console.log("your 90 TD")
-              }
-              $('body'.append('<h1></h1>'));
+        l = $('#user').val()
+        j = $('#question-title').html()
 
-})}
+        console.log(l, j)
+
+
+        if (l == j) {
+            $('#question-title').html(yard20[i])
+            console.log('your right we almost done with the project')
+        }
+
+        if (x == 40) {
+            $('#question-title').html(yard40[i])
+            console.log("your right 40")
+        }
+        if (x == 60) {
+            $('#question-title').html(yard60[i])
+            console.log("your  right 60")
+        }
+        if (x == 80) {
+            $('#question-title').html(yard80[i])
+            console.log("your rihgt  80")
+        }
+        if (x === "100") {
+            $('#question-title').html(yard100[i])
+            console.log("your  TD")
+        }
+
+
+    })
+}
 
 MakeModalAppear()
-    //
-    MakeAModalAppear()
-
+//
+MakeAModalAppear()
+submitAnswer()
 
 // for (let i = 0; i < 15; i++) {
 //     MakeModalAppear()
