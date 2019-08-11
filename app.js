@@ -28,24 +28,33 @@ function MakeModalAppear() {
         console.log(x)
         if (x == 20) {
             $('#question-title').html(yard20[i])
+            answer20[i]=n
             console.log("blah")
         }
 
         if (x == 40) {
             $('#question-title').html(yard40[i])
             console.log("your 40")
+            answer40[i]=n
+
         }
         if (x == 60) {
             $('#question-title').html(yard60[i])
             console.log("your 60")
+            n=answer60[i]
+
         }
         if (x == 80) {
             $('#question-title').html(yard80[i])
             console.log("your 80")
+            n=answer80[i]
+
         }
         if (x === "100") {
             $('#question-title').html(yard100[i])
             console.log("your TD")
+            n=answer100[i]
+
         }
 
         $('#question-modal').css({
@@ -79,16 +88,18 @@ function MakeAModalAppear(modalAnswers) {
         console.log(modalAnswers)
     })
 }
-
+// creates the submit button that that allows the 
+// user to check the value of 
+// the input anc check the answer
 function submitAnswer() {
     $("#confirm-button").click(function () {
         l = $('#user').val()
         j = $('#question-title').html()
-
+        
         console.log(l, j)
 
 
-        if (l == j) {
+        if ( l== n) {
             $('#question-title').html(yard20[i])
             console.log('your right we almost done with the project')
         }
