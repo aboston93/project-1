@@ -18,6 +18,9 @@ let answer80 = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm',
 let answer100 = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o']
 
 
+function generateQuestion(){ 
+Math.floor((Math.random() * 15) + 1);
+}
 
 // Modal question  function appears  
 //comparing html of the div upon its intial click and the  depending on the value posting a question.
@@ -25,12 +28,12 @@ function MakeModalAppear() {
     $(document).ready(function () {
         $(".box").click(function () {
             x = $(this).html()
-            let p = Math.floor((Math.random() * 15) + 1);
+            let p = Math.floor((Math.random() * 15) );
 let i = Number(p)
             $(this).append('<img src="Untitled.png">')
             console.log(x)
             if (x == 20) {
-                $('#question-title').html(yard20[i])
+                $('#question-title').html(yard20[generateQuestion()])
                 n = answer20[i]
                 console.log("blah")
             }
