@@ -102,6 +102,8 @@ function submitAnswer() {
         if ( l== n) {
             $('#question-title').html(yard20[i])
             console.log('your right we almost done with the project')
+            window.alert("Great Throw!");
+
         }
 
 
