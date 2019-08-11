@@ -13,6 +13,8 @@ let yard80 = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', '
 let yard100 = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o']
 let p = Math.floor((Math.random() * 15) + 1);
 let i = Number(p)
+l = $('#user').val()
+
 // Modal question  function appears 
 function MakeModalAppear() {
     $(".box").click(function () {
@@ -63,7 +65,7 @@ function MakeAModalAppear(modalAnswers) {
         $('#question-modal').css({
             "display": "none",
         })
-    
+        
 
         $('.box').html(modalAnswers)
         $('#answer-title').html(modalAnswers)
@@ -74,27 +76,30 @@ submitAnswer()
 
 function submitAnswer(){
     $("#confirm-button").click(function () {
-        if(x==20){
+       l = $('#user')
+        if(l==x){
             $('#question-title').html(yard20[i]) 
-            console.log("blah")
+            console.log('your right we almost done with the project')
            }
            
            if(x==40){
                $('#question-title').html(yard40[i]) 
-               console.log("your 40")
+               console.log("your right 40")
               }
               if(x==60){
                $('#question-title').html(yard60[i]) 
-               console.log("your 60")
+               console.log("your  right 60")
               }
               if(x==80){
                $('#question-title').html(yard80[i]) 
-               console.log("your 80")
+               console.log("your rihgt  80")
               }
               if(x==="100"){
                $('#question-title').html(yard100[i]) 
-               console.log("your TD")
+               console.log("your 90 TD")
               }
+              $('body'.append('<h1></h1>'));
+
 })}
 
 MakeModalAppear()
