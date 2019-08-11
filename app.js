@@ -67,15 +67,39 @@ function MakeAModalAppear(modalAnswers) {
 
         $('.box').html(modalAnswers)
         $('#answer-title').html(modalAnswers)
-
+submitAnswer()
         console.log(modalAnswers)
     })
 }
 
+function submitAnswer(){
+    $("#confirm-button").click(function () {
+        if(x==20){
+            $('#question-title').html(yard20[i]) 
+            console.log("blah")
+           }
+           
+           if(x==40){
+               $('#question-title').html(yard40[i]) 
+               console.log("your 40")
+              }
+              if(x==60){
+               $('#question-title').html(yard60[i]) 
+               console.log("your 60")
+              }
+              if(x==80){
+               $('#question-title').html(yard80[i]) 
+               console.log("your 80")
+              }
+              if(x==="100"){
+               $('#question-title').html(yard100[i]) 
+               console.log("your TD")
+              }
+})}
+
 MakeModalAppear()
     //
     MakeAModalAppear()
-
 
 
 // for (let i = 0; i < 15; i++) {
