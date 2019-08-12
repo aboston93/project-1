@@ -11,11 +11,11 @@ let yard60 = ['What NFL team is owned by two familys related by marriage ', 'Wha
 let yard80 = ['How many of the five Dallas teams Tom Landry took to Super Bowls were victorious', 'What NFL team introduced the no-huddle offense during the 1980s', 'What quarterback got stuck with the given names Yelberton Abraham', 'What Baltimore Colts great led the NFL in passing in the 1960s, with 26548 yards', 'What Pittsburgh Steelers great was the first wide receiver to be named super Bowl MVP']
 let yard100 = ['What Native American language was Super Bowl30 the first to be broadcast in?', 'What Cowboys 99-yard run from scrimmage put him in the NFL football record book in 1983?',
     'What team hired the NFLs first professional cheerleading squad, in 1972?', 'Who was the first athlete to rap at a Pro Bowl musical gala', 'What famous trick play did the phidelphia eagles run in the superbowl win']
-let answer20 = ['six', 'one', 'megatron', 'three', 'falcons']
-    let answer40 = ['Running Back', 'The Rock', 'PrimeTime', 'Patrick Mahommes', 'Ray Lewis']
-let answer60 = ['Megatgiants and steelers ', '199', 'University of Tennessee at Chattanooga', 'six', 'QB Sneak']
-let answer80 = ['two', 'Cincinnati Bengals ', 'Y.A. Tittle.', 'Johnny Unitas', 'Lynn Swan']
-let answer100 = ['Navajo', 'Tony Dorsetts', ' Dallas Cowboys ', 'Deion Sanders', 'philly special']
+let answer20 = ['Six', 'One', 'Megatron', 'Three', 'Falcons']
+    let answer40 = ['Running Back', 'The Rock', 'Primetime', 'Patrick Mahommes', 'Ray Lewis']
+let answer60 = ['Giants and Steelers ', '199', 'University Of Tennessee At Chattanooga', 'Six', 'QB Sneak']
+let answer80 = ['Two', 'Cincinnati Bengals ', 'Y.A. Tittle.', 'Johnny Unitas', 'Lynn Swan']
+let answer100 = ['Navajo', 'Tony Dorsetts', 'Dallas Cowboys', 'Deion Sanders', 'Philly Special']
 // let p = Math.floor((Math.random() * 15) );
 // let i = Number(p)
 
