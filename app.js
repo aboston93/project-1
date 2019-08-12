@@ -66,6 +66,13 @@ function MakeModalAppear() {
 
             }
 
+            if(wrongA>=3){
+                window.alert("You  lost the SEI SUPERBOWL")
+                console.log("why cant i lose!!!")
+            }
+            
+            
+
             $('#question-modal').css({
                 "display": "block",
             })
@@ -136,6 +143,7 @@ console.log(totalScore)
                 "display": "none",
             })
 wrongA++
+console.log(wrongA)
             $('img').remove()
 
         }
@@ -168,10 +176,6 @@ finishedGame()
 // if(Number($(this)=20)){
 
 // }
-
-if(wrongA>3){
-    window.alert("You  lost the SEI SUPERBOWL")
-}
 
 
 
