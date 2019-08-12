@@ -3,9 +3,10 @@ git-repo link:
 https://github.com/kaoko/project-1
 Git gub projects link:
 https://github.com/kaoko/project-1/projects/1
+website deployment:
+http://coordinated-decision.surge.sh/
 
-
-
+https://app.netlify.com/sites/boring-pare-99c988/deploys
 
 
 
