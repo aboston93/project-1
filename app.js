@@ -24,7 +24,7 @@ let answer100 = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm'
 // RandoArr = [generateQuestion()]
 // return RandoArr;
 // }
-
+let wrongA=0
 // Modal question  function appears  
 //comparing html of the div upon its intial click and the  depending on the value posting a question.
 function MakeModalAppear() {
@@ -135,7 +135,7 @@ console.log(totalScore)
             $('#answer-modal').css({
                 "display": "none",
             })
-
+wrongA++
             $('img').remove()
 
         }
@@ -169,7 +169,9 @@ finishedGame()
 
 // }
 
-
+if(wrongA>3){
+    window.alert("You  lost the SEI SUPERBOWL")
+}
 
 
 
