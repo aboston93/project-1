@@ -1,8 +1,8 @@
 // session Storage
 // clickys 
 // local storage
-
-
+let totalScore
+let x
 // global variables that will be used as the questions 
 let questions = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o']
 let answers = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o']
@@ -16,24 +16,27 @@ let answer40 = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm',
 let answer60 = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o']
 let answer80 = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o']
 let answer100 = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o']
+// let p = Math.floor((Math.random() * 15) );
+// let i = Number(p)
 
-
-function generateQuestion(){ 
-Math.floor((Math.random() * 15) + 1);
-}
+// function generateQuestion(){ 
+// Math.floor((Math.random() * 15) );
+// RandoArr = [generateQuestion()]
+// return RandoArr;
+// }
 
 // Modal question  function appears  
 //comparing html of the div upon its intial click and the  depending on the value posting a question.
 function MakeModalAppear() {
     $(document).ready(function () {
         $(".box").click(function () {
-            x = $(this).html()
+        x= $(this).html()
             let p = Math.floor((Math.random() * 15) );
-let i = Number(p)
+             let i = Number(p)
             $(this).append('<img src="Untitled.png">')
             console.log(x)
             if (x == 20) {
-                $('#question-title').html(yard20[generateQuestion()])
+                $('#question-title').html(yard20[i])
                 n = answer20[i]
                 console.log("blah")
             }
@@ -56,7 +59,7 @@ let i = Number(p)
                 n = answer80[i]
 
             }
-            if (x === "100") {
+            if (x == 100) {
                 $('#question-title').html(yard100[i])
                 console.log("your TD")
                 n = answer100[i]
@@ -73,14 +76,14 @@ let i = Number(p)
 
             $('#question-title').html()
             MakeAModalAppear()
-            submitAnswer()
+           
         })
     }
     )
 }
 
 
-function MakeAModalAppear(modalAnswers) {
+function MakeAModalAppear() {
     $("#answer-button").click(function () {
         $('#answer-modal').css({
             "display": "block",
@@ -90,34 +93,41 @@ function MakeAModalAppear(modalAnswers) {
         })
 
 
-        $('.box').html(modalAnswers)
-        $('#answer-title').html(modalAnswers)
-        submitAnswer()
-        console.log(modalAnswers)
+        $('.box').html()
+        $('#answer-title').html()
+      
+        console.log()
     })
 }
 // creates the submit button that that allows the 
 // user to check the value of 
 // the input anc check the answer
 function submitAnswer() {
-    finishedGame()
+    
     $("#confirm-button").click(function () {
         l = $('#user').val()
         j = $('#question-title').html()
         f = $('#answer-title').html()
+        e = $('.scoreb').html()
+        let oldscore=0
+         p = 0 + Number(x)
+         totalScore=Number(x)+Number(e)
         console.log(l, j)
 
 
         if (l == n) {
-            $('#question-title').html(yard20[i])
+        
             console.log('your right we almost done with the project')
-
-            s = Number(0) + Number(x)
-            console.log(f, x, s)
-            $('#answer-title').html(s)
             $('#answer-modal').css({
                 "display": "none",
             })
+            console.log(f, x, e,totalScore,l,n)
+        
+console.log(totalScore)
+           
+           
+            $('#answer-title').html(totalScore)
+           
         }
 
 
@@ -137,10 +147,10 @@ function submitAnswer() {
 function finishedGame() {
 
     $("#confirm-button").click(function () {
-       p= $('scoreb').html()
-        if (Number(p) >= 300) {
-            window.alert('You have won the SEI SUPERBOWL!!')
-        }
+      
+        // if (totalScore >= 300) {
+        //     window.alert('You have won the SEI SUPERBOWL!!')
+        // }
     }
     )
 }
