@@ -136,6 +136,7 @@ function submitAnswer() {
 
 
             $('#answer-title').html(totalScore)
+            $('#score').html(totalScore)
 
         }
 
